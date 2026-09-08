@@ -25,10 +25,18 @@ dth.begin();
   digitalWrite(ledAmarillo, LOW);
   digitalWrite(ledRojoerde, LOW);
   digitalWrite(buzzer, LOW);
-
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+float t = dht.readTemperature();   // Grado centígrados 
+
+// Mostrar en LCD
+lcd.serCursor(0,0);
+lcd.print("Temperatura");
+lcd.serCursor(0,1);
+lcd.print(t);
+lcd.print(" C ");
+
+// Va
 
 }
