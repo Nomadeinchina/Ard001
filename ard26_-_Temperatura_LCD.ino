@@ -37,6 +37,19 @@ lcd.serCursor(0,1);
 lcd.print(t);
 lcd.print(" C ");
 
-// Va
+// Validar lectura
+if (isnan(t)) return;
+// Apagar todo antes de decidir
+  
+digitalWrite(ledVerde, LOW);
+digitalWrite(ledAmarillo, LOW);
+digitalWrite(ledRojoerde, LOW);
+digitalWrite(buzzer, LOW);
 
+//Decisión según rango de temperatura
+if (t< 25.0) {digitalWrite(ledVerde, HIGH);}
+  else if (t >= 25.0 && t < 35.0) {digitalWrite(ledAmarillo, HIGH);}
+  else {digitalWrite(ledRojo, HIGH);  // t >= 35.0
+        digitalWrite(buzzer, HIGH);}  // Alarma sonora
+  delay(1000);
 }
