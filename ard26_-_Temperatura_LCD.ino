@@ -1,5 +1,7 @@
-tevoid setup() {
-  // put your setup code here, to run once:
+*/sensor _______ + LCD /*
+
+void setup() {
+  // put your setup code here, to run once: Sensor de tempetarura
 
 }
 
