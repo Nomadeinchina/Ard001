@@ -1,6 +1,5 @@
 // Código completo para medir la temperatura y la humedad con el sensor DHT11.
 
-
 #include <DHT.h> // Incluimos librería
 #define DHTPIN 2 // Pin digital donde se conecta el sensor DHT11
 // Dependiendo del tipo de sensor
