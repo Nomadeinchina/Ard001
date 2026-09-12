@@ -1,4 +1,4 @@
-//sensor _______ + LCD
+//sensor _______ + LCD rama 1
 #include <DHT.h>
 #include <LiquidCrystal.h>
 
